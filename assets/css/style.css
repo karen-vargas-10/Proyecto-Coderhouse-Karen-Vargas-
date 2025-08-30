@@ -1,0 +1,1121 @@
+/*Fuente Mulish*/
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+/*Fuente Open Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+/*Generales*/
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 64px;
+    font-family: "Mulish", sans-serif;
+    font-weight: 900;
+}
+
+h2{
+    font-size: 40px;
+    font-family: "Mulish", sans-serif;
+    font-weight: 900;
+}
+
+h3{
+    font-size: 20px;
+    font-family: "Mulish", sans-serif;
+    font-weight: 900;
+}
+
+h4{
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+}
+
+p{
+    font-family: "Open Sans", sans-serif;
+    color: #051922;
+    font-size: 15px;
+}
+
+a{
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+}
+
+.naranja {
+    color: #F28123;
+}
+
+.boton-dark{
+    background-color:#F28123;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.boton-dark:hover{
+    background-color:black;
+    color: #F28123;
+}
+
+.boton-light{
+    color: white;
+    border-style: solid;
+    border-color: #F28123;
+    padding: 7px 20px;
+    margin-left: 20px;
+    border-radius: 50px;
+}
+
+.boton-light:hover{
+    color: white;
+    border-style: solid;
+    background-color: #F28123;
+    padding: 7px 20px;
+    margin-left: 20px;
+    border-radius: 50px;
+}
+
+.fondogris{
+    background-color: #F5F5F5;
+}
+
+/*HOME barra de navegacion-------------------------*/
+header{
+    background-color:rgb(84, 84, 84);
+    display: flex;
+    justify-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.seccion-navbar{
+    padding: 25px 0px;
+    /*position: absolute;*/
+    align-content: center;
+}
+
+.imagen-logo{
+    display: flex;
+    align-items: center;
+}
+
+.menu-hamburguesa{
+    display: none;
+}
+
+.menu-hamburguesa i{
+    font-size: 35px;
+    color: white;
+}
+
+/*boton de home activo*/
+.seccion-navbar nav ul li a.active{
+    color:#F28123;
+}
+
+/*estilos de la lista del navegador*/
+.menu-navegacion{
+    display: flex;
+    justify-content: center;
+}
+.menu-navegacion ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+.menu-navegacion ul li a:hover{
+    color:#F28123;
+}
+
+/*estilos de los items de la lista del navegador*/
+.menu-navegacion ul li{
+    padding: 15px;
+}
+
+/*estilos del navegador de los (enlaces)*/
+.menu-navegacion ul li a{
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+}
+
+/*iconos shop y busqueda*/
+.menu-iconos ul{
+    display: flex;
+    list-style: none;
+    margin-bottom: 0px;
+    justify-content:end;
+}
+
+.menu-iconos ul li{
+    padding: 15px;
+    vertical-align: middle;
+}
+.menu-iconos ul li a{
+    color: white;
+    text-decoration: none;
+    text-align: right;
+}
+
+.menu-iconos ul li a:hover{
+    color: #F28123;
+}
+/* FIN HOME barra de navegacion*/
+
+/*HOME encabezado o baner----------------------------------*/
+
+.contenedor-seccion-encabezado{
+    background-color: #3a5663;
+    min-height: 100vh;
+    align-content: center;
+}
+.seccion-encabezado{
+    display: block;
+    text-align: center;
+}
+
+.seccion-encabezado-contenido h1{
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+.seccion-encabezado-contenido h4{
+    color: #F28123;
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.7cap;
+    margin-bottom: 20px;
+}
+
+.seccion-encabezado-contenido a{
+    border-radius: 50px;
+    text-align: center;
+}
+
+.botones-encabezado{
+    justify-items: center;
+    margin-top: 35px;
+}
+/* FIN HOME encabezado o baner*/
+
+/*HOME seccion info envios---------------------------------*/
+.contenedor-seccion-info-envios{
+    height: 225px;
+    background-color: #F5F5F5;
+    align-content: center;
+    justify-items: center;
+}
+
+.seccion-info-envios{
+    display: flex;
+    padding: 80px 0px;
+    justify-content: flex-start;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.contenedor-tarjetas-info-envios{
+    row-gap: 20px;
+}
+
+.tarjetas-info-envios h3{
+    font-size: 18px;
+    margin-bottom:4px;
+}
+
+.tarjetas-info-envios p{
+    font-size: 14px;
+}
+
+.tarjetas-info-envios{
+    display: flex;
+    height: 65px;
+    width: 384px;
+    letter-spacing: 0.5px;
+    margin: 0px;
+    padding: 0px 15px;
+    align-items: center; /*centra el texto verticalmente*/
+}
+
+.iconos-envios{
+    display: flex;
+    align-items: center;
+    padding: 17px 17px;
+    margin: 0px 15px 0px 0px;
+    color: #F28123;
+    border-style: dotted;
+    border-radius: 50%;
+    font-size: 22px;
+} 
+
+.iconos-envios-texto{
+    display: block;
+} 
+/*FIN HOME seccion info envios*/
+
+/*HOME seccion nuestros productos--------------------------*/
+.contenedor-seccion-nuestros-productos{
+    width: 100%;
+    justify-items: center;
+}
+.seccion-nuestros-productos{
+    margin: 150px 0px;
+}
+
+.nuestros-productos-encabezado{
+    height: 198px;
+}
+
+.nuestros-productos-encabezado h2{
+    text-align: center;
+    padding: 0px 0px 15px 0px;
+    margin: 0px 0px 17.5px 0px;
+}
+
+.nuestros-productos-encabezado p{
+    text-align: center;
+}
+
+.cards-productos{
+    display: flex;
+    column-gap: 30px;
+    row-gap: 30px;
+    justify-content: center;
+}
+
+.cards-productos-items{
+    padding: 30px;
+    box-shadow: 0 0 20px #e4e4e4;
+    width: fit-content;
+}
+
+.cards-productos-items:hover{
+    box-shadow: 0 0 20px #cccccc;
+}
+.cards-productos-items a.boton-dark{
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.cards-productos div img{
+    max-width: 261px;
+}
+
+.cards-productos h4{
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight:bolder;
+}
+
+.cards-productos p{
+    margin-bottom: 10px;
+}
+
+.cards-productos h2{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.cards-productos a{
+    font-size: 14px;
+    border-radius: 50px;
+}
+/*FIN HOME seccion nuestros productos*/
+
+/*HOME seccion oferta del mes------------------------------*/
+.contenedor-seccion-oferta-del-mes{
+    width: 100%;
+    align-content: center;
+    background-color:#F5F5F5;
+}
+
+.seccion-oferta-del-mes{
+    justify-content: center;
+    padding: 100px 0px;
+}
+
+.seccion-oferta-del-mes-imagen{
+    background-image:url(file:///C:/Users/utente/Documents/PreEntrega2_Vargas_Murcia/assets/img/Oferta.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 40px;
+    max-width: 50%;
+}
+
+.seccion-oferta-del-mes-descripcion{
+    padding: 40px 20px 0px 20px;
+    max-width: 50%;
+}
+
+.seccion-oferta-del-mes-descripcion h2{
+    margin-bottom: 18px;
+}
+.seccion-oferta-del-mes-descripcion h5{
+    text-transform: uppercase;
+    font-family: "Mulish", sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+
+.seccion-oferta-del-mes-descripcion p{
+    margin: 25px 0px;
+}
+
+.cuenta-regresiva{
+    display: flex;
+    column-gap: 5px;
+}
+.cuenta-regresiva div{
+    border-style: solid;
+    border-color: #f28123;
+    padding: 8px 20px;
+    text-align: center;
+}
+
+.cuenta-regresiva p{
+    margin: 0px;
+}
+
+.cuenta-regresiva h2{
+    margin: 0px;
+}
+
+.seccion-oferta-del-mes a.boton-dark{
+    display: inline-block;
+    margin-top: 30px;
+}
+/*FIN HOME seccion oferta del mes*/
+/*Seccion Footer-------------------------------------------*/
+
+.contenedor-seccion-footer{
+    background-color:#051922;
+    width: 100%;
+    justify-items: center;
+}
+
+.seccion-footer{
+    display: block;
+    /*column-gap: 40px;*/
+}
+
+.seccion-footer .lista-paginas li i{
+    color: #F28123;
+}
+
+.seccion-footer li a{
+    color: rgb(181, 181, 181);
+}
+
+.seccion-footer li{
+    list-style: none;
+}
+
+.seccion-info{
+    display: flex;
+    padding: 150px 0px;
+}
+
+.seccion-info div{
+    padding: 0px 0px;
+}
+.seccion-info h3{
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    margin-bottom: 18px;
+}
+
+.seccion-info div ul{
+    padding-left: 0px;
+}
+
+.lista-paginas ul li{
+    margin-bottom: 10px;
+}
+
+.lista-paginas ul li a:hover{
+    color: #F28123;
+}
+
+.seccion-info input{
+    color: rgb(181, 181, 181);
+    background-color: rgb(1, 39, 56);
+    padding: 20px;
+    margin-right: 3px;
+    width: 78%;
+    border-radius: 5px;
+    font-size: 15px;
+    border: none;
+}
+
+.seccion-info button{
+    background-color: rgb(1, 39, 56);
+    padding: 20px;
+    width: 20%;
+    border-radius: 5px;
+    font-size: 15px;
+    border: none;
+}
+
+.seccion-info button i{
+    color: #F28123;
+}
+
+/*segunda parte footer*/
+.seccion-legal{
+    display: flex;
+    justify-items: center;
+}
+
+.seccion-legal div{
+    display: flex;
+}
+
+.seccion-legal div p{
+    margin: 0px;
+    padding: 16px 0px;
+}
+
+.footer-iconos{
+    justify-content: end;
+    padding: 0px 15px;
+}
+
+.lista-footer-iconos{
+    display: flex;
+}
+
+.lista-footer-iconos li{
+    padding: 16px 10px;
+    color: rgb(181, 181, 181);
+}
+
+.lista-footer-iconos li i:hover{
+    color: #F28123;
+}
+
+footer p {
+    color: rgb(181, 181, 181);
+    margin-bottom: 18px;
+}
+
+footer strong {
+    color: #F28123;
+}
+
+/*FIN Footer-----------------------------------------*/
+
+/*encabezado o baner de las secciones a excepcion del home*/
+.contenedor-seccion-titulo{
+    background-color: #3a5663;
+    width: 100%;
+    min-height: 60vh;
+    align-content: center;
+}
+.seccion-titulo{
+    display: block;
+    justify-items: center;
+}
+
+.seccion-titulo h4{
+    font-size: 14px;
+}
+
+.subtitulo{
+    text-transform: uppercase;
+    color: #F28123;
+    letter-spacing: 0.7cap;
+    margin-bottom: 20px;
+}
+
+.seccion-titulo h1{
+    font-family: "Mulish", sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    color: white;
+}
+/*FIN encabezado o baner de las secciones a excepcion del home*/
+/*ACERCA DE porque Fruitkha?---------------------------------------------*/
+.seccion-Fruitkha{
+    margin: 150px 0px;
+}
+.seccion-Fruitkha-info h2{
+    padding-bottom: 14px;
+    margin-bottom: 18px;
+}
+.seccion-Fruitkha-tarjetas {
+    display: flex;
+    margin-bottom: 42px;
+}
+.seccion-Fruitkha-tarjetas-icono{
+    display: block;
+    padding: 17px 17px;
+    margin: 0px 15px 0px 0px;
+    color: #F28123;
+    border-style: dotted;
+    border-radius: 50%;
+    font-size: 24px;
+    line-height: 20px;
+    text-align: center;
+    width: 65px;
+    height: 65px;
+} 
+
+.seccion-Fruitkha-tarjetas-icono i{
+    vertical-align: middle;
+} 
+
+.seccion-Fruitkha-tarjetas-texto{
+    display: block;
+}
+/*FIN ACERCA DE porque Fruitkha?--------------*/
+/*ACERCA DE banner descuentos-------------------------------------*/
+
+.fondo-banner-descuentos{
+    background-image: url(https://themewagon.github.io/fruitkha/assets/img/1.jpg);
+    background-size: cover;
+}
+
+.fondo-banner-descuentos-contenedor {
+    padding: 110px 0px;
+    row-gap: 20px;
+}
+.fondo-banner-descuentos-contenedor h2{
+    padding-bottom: 20px;
+}
+.fondo-banner-descuentos-texto{
+    display: flex;
+    align-items: end;
+}
+.fondo-banner-descuentos-texto{
+    padding-bottom: 25px;
+}
+.fondo-banner-descuentos-texto h2{
+    padding-bottom: 0px;
+}
+.fondo-banner-descuentos-texto h3{
+    font-weight: 500;
+    padding-right: 10px;
+    text-align: center;
+}
+/*FIN ACERCA DE banner descuentos--------------*/
+/*ACERCA DE nuestro equipo -------------------------------------*/
+
+.seccion-nuestro-equipo{
+    margin: 150px 0px;
+}
+
+.seccion-nuestro-equipo-titulo{
+    margin-bottom: 80px;
+}
+
+.seccion-nuestro-equipo-titulo h2{
+    margin-bottom: 18px;
+    padding-bottom: 15px;
+}
+.trabajadores-foto1{
+    background-image: url(file:///C:/Users/utente/Documents/PreEntrega2_Vargas_Murcia/assets/img/Jimmy-1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    padding-bottom: 15px;
+}
+.trabajadores-foto2{
+    background-image: url(file:///C:/Users/utente/Documents/PreEntrega2_Vargas_Murcia/assets/img/Casate.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    padding-bottom: 15px;
+}
+.trabajadores-foto3{
+    background-image: url(file:///C:/Users/utente/Documents/PreEntrega2_Vargas_Murcia/assets/img/Simon.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    padding-bottom: 15px;
+}
+
+.tarjetas-trabajadores h5{
+    font-size: 14px;
+}
+
+.tarjetas-trabajadores h3{
+    margin-top: 15px;
+}
+
+.tarjetas-trabajadores-contenido{
+    position: relative;
+    z-index: 1;
+}
+
+.trabajadores-redes{
+    position: absolute;
+    width: 92.5%;
+    top: 330px;
+    justify-items: center;
+    z-index: 1;
+}
+
+.trabajadores-redes ul{
+    display: flex;
+    list-style: none;
+    justify-items: center;
+    column-gap: 15px;
+    padding: 20px 0px 0px 0px;
+    top: 330px;
+    left: 95px;
+}
+
+.trabajadores-redes ul li a{
+    color: white;
+    background-color: #F28123;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    line-height: 30px;
+    padding: 5px;
+}
+.trabajadores-redes ul li a:hover{
+    color: #F28123;
+    background-color: black;
+}
+
+/*FIN ACERCA DE nuestro equipo*/
+/*ACERCA DE testimonios -------------------------------------*/
+.testimonios{
+    margin: 80px 0px 150px 0px;
+}
+.testimonios-imagen{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.testimonios-imagen img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    justify-items: center;
+}
+
+.testimonios-texto{
+    text-align: center;
+}
+
+.testimonios-texto h5{
+    font-size: 14px;
+    font-weight: 700;
+    color: #999999;
+    margin: 10px 0px 18px 0px;
+}
+
+.testimonios-texto p{
+    font-size: 17px;
+    font-style: italic;
+    color: #999999;
+    margin-top: 20px;
+}
+/*FIN ACERCA DE testimonios*/
+/*SHOP----------------------------------------------------------*/
+.menu-productos{
+    margin: 150px 0px;
+}
+.menu-productos div{
+    padding-bottom: 20px;
+}
+.menu-productos-categorias{
+    justify-items: center;
+    margin-bottom: 60px;
+}
+.menu-productos-categorias ul{
+    display: flex;
+    list-style: none;
+    text-align: center;
+    column-gap: 30px;
+}
+.menu-productos-categorias li{
+    font-weight: 700;
+    color: #323232;
+    padding: 8px 20px;
+    border: 2px solid #051922;
+    border-radius: 25px;
+}
+
+.menu-productos-categorias a{
+    font-size: 18px;
+    color: #323232;
+}
+
+.productos-paginas{
+    margin: 60px 0px 0px 0px;
+}
+
+.productos-paginas ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    column-gap: 30px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.productos-paginas li{
+    font-weight: 700;
+    background-color: #f3f3f3;
+    color: #323232;
+    padding: 8px 20px;
+    border-radius: 25px;
+}
+.productos-paginas li:hover{
+    background-color: #F28123;
+}
+
+.productos-paginas a{
+    font-size: 18px;
+    color:#6f6f6f;
+}
+/*FIN Shop*/
+/*NOTICIAS-------------------------------------------------------*/
+.noticias{
+    margin: 150px 0px;
+}
+
+.noticias-tarjetas-contenedor{
+    row-gap: 30px;
+}
+
+.noticias-tarjetas{
+    box-shadow: 0 0 20px #e4e4e4;
+    padding: 0px;
+    margin: 0px 15px;
+    max-width: 410px;
+}
+.noticias-tarjetas:hover{
+box-shadow: 0 0 20px #cccccc;
+}
+.noticias-imagen{
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.foto-1{
+    background-image: url(file:///C:/Users/utente/Documents/PreEntrega2_Vargas_Murcia/assets/img/noticias_1.jpg);
+}
+
+.foto-2{
+    background-image: url(file:///C:/Users/utente/Documents/PreEntrega2_Vargas_Murcia/assets/img/noticias_2.jpg);
+}
+
+.foto-3{
+    background-image: url(file:///C:/Users/utente/Documents/PreEntrega2_Vargas_Murcia/assets/img/noticias_3.jpg);
+}
+
+.foto-4{
+    background-image: url(file:///C:/Users/utente/Documents/PreEntrega2_Vargas_Murcia/assets/img/noticias_4.jpg);
+}
+
+.foto-5{
+    background-image: url(file:///C:/Users/utente/Documents/PreEntrega2_Vargas_Murcia/assets/img/noticias_5.jpg);
+}
+
+.foto-6{
+    background-image: url(file:///C:/Users/utente/Documents/PreEntrega2_Vargas_Murcia/assets/img/noticias_6.jpg);
+}
+
+.noticias-texto{
+    padding: 25px;
+}
+
+.noticias-texto h3{
+    margin-bottom: 18px;
+}
+
+.noticias-texto a{
+    color: #051922;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.noticias-texto a:hover{
+    color: #F28123;
+}
+
+
+.noticias-fecha{
+    display: flex;
+    color: #1e3945;
+}
+
+.noticias-fecha p{
+    font-size: 12px;
+    color: #1e3945;
+    margin-left: 5px;
+    margin-right: 15px;
+}
+/*FIN Shop*/
+/*CONTACTANOS-------------------------------------------------------*/
+.contenedor-seccion-contactanos{
+    margin: 150px 0px;
+}
+
+.contactanos-formulario h3{
+    font-size: 25px;
+    margin-bottom: 18px;
+}
+
+.contactanos-formulario p{
+    margin-bottom: 25px;
+}
+
+.contactanos-formulario input{
+    width: 49.5%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.contactanos-formulario textarea{
+    width: 99.5%;
+    height: 200px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.contactanos-formulario button{
+    border: none;
+    padding: 15px 25px;
+    text-transform: uppercase;
+    color: #051922;
+    font-weight: 700;
+}
+form div{
+    margin-bottom: 18px;
+}
+
+.contactanos-info{
+    justify-items: center;
+    padding: 45px 30px;
+    background-color: #F5F5F5;
+}
+
+.contactanos-info-contenedor{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.contacto-info-icono{
+    color: #F28123;
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.contacto-info-texto{
+    display: block;
+}
+
+.contacto-info-texto h3{
+    font-size: 20px;
+}
+/*FIN Contactanos*/
+
+@media (max-width:480px){
+    p{
+        font-size: 14px;
+    }
+    h5{
+        font-size: 18px;
+    }
+    /*Barra de navegacion*/
+    .seccion-navbar{
+        display: flex;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .menu-hamburguesa{
+        display: block;
+    }
+    .menu-navegacion{
+        display: none;
+    }
+    .menu-iconos{
+        display: none;
+    }
+    /*Home banner*/
+    .botones-encabezado{
+        justify-items: center;
+        margin-top: 35px;
+    }
+    .botones-encabezado .boton-dark{
+        width: 95%;
+    }
+    .botones-encabezado .boton-light{
+        width: 95%;
+        margin: 15px 0px 0px 0px;
+    }
+    .seccion-encabezado-contenido h4{
+        font-size: 13px;
+    }
+    .seccion-encabezado-contenido h1{
+        font-size: 28px;
+    }
+    .seccion-encabezado-contenido a{
+        display: block;
+        font-size: 14px;
+        text-align: center;
+    }
+    /*HOME seccion info envios*/
+    .seccion-info-envios{
+        padding: 80px 20px;
+    }
+    /*Home seccion nuestros productos*/
+    .cards-productos{
+        row-gap: 30px;
+    /*padding-top: 50px;*/
+    }
+    .nuestros-productos-encabezado{
+        padding-bottom: 70px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    /*HOME seccion oferta del mes------------------------------*/
+    .seccion-oferta-del-mes-imagen{
+        margin-top: 40px;
+        max-width: 100%;
+    }
+    .seccion-oferta-del-mes-descripcion{
+        max-width: 100%;
+    }
+    .cuenta-regresiva{
+        flex-wrap: wrap;
+        row-gap: 5px;
+    }
+    /*Seccion Footer-------------------------------------------*/
+    .seccion-info{
+        padding: 80px 20px;
+        row-gap: 20px;
+    }
+    .seccion-legal{
+        padding: 20px 20px;
+        row-gap: 20px;
+        text-align: center;
+        justify-content: center;
+    }
+    .footer-iconos{
+        justify-content: center;
+    }
+
+    .footer-iconos ul{
+        padding-left:0px ;
+    }
+    /*PAG Acerca de-------------------------------------------*/
+    .fondo-banner-descuentos-contenedor{
+    padding-left: 20px;
+    padding-right: 20px;
+    }
+    .seccion-nuestro-equipo{
+    padding-left: 8px;
+    padding-right: 8px;
+    }
+    .testimonios{
+    padding-left: 20px;
+    padding-right: 20px;
+    }
+    .tarjetas-trabajadores{
+    row-gap: 20px;
+    }
+    /*PAG Shop-----------------------------------------------*/
+    .productos-paginas ul{
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+    }
+    .menu-productos-categorias ul{
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: center;
+    }
+    /*PAG Noticias-----------------------------------------------*/
+    .noticias-tarjetas-contenedor{
+    justify-content: center;
+    }
+    /*PAG Contactanos--------------------------------------------*/
+    .contactanos-info{
+    justify-items:start;
+    padding: 45px 20px;
+    background-color: #F5F5F5;
+    }
+    .contactanos-formulario-contenedor{
+    padding: 0px 20px;
+    margin-bottom: 40px;
+    }
+    .contenedor-seccion-contactanos{
+    margin: 80px 0px;
+    }
+}
+
+@media (max-width:992px){
+    /*Barra de navegacion*/
+    .seccion-navbar{
+        display: flex;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .menu-hamburguesa{
+        display: block;
+    }
+    .menu-navegacion{
+        display: none;
+    }
+    .menu-iconos{
+        display: none;
+    }
+    /*Home seccion info envios*/
+    .contenedor-seccion-info-envios{
+    height: auto;
+    }
+    .seccion-info-envios{
+    padding-right: 20px;
+    padding-left: 20px;
+    }
+    .contenedor-tarjetas-info-envios{
+    column-gap: 20px;
+    }
+    .tarjetas-info-envios{
+    padding: 0px;
+    }
+    /*Home seccion oferta del mes*/
+    .cuenta-regresiva{
+    flex-wrap: wrap;
+    row-gap: 5px;
+    }
+    /*Seccion Footer-------------------------------------------*/
+    .seccion-info{
+        padding: 80px 20px;
+        row-gap: 20px;
+    }
+    .seccion-legal{
+        padding: 0px 20px;
+    }
+    .noticias-tarjetas-contenedor{
+        justify-content: center;
+    }
+
+}
