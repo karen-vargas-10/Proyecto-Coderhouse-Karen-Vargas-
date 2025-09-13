@@ -1,0 +1,99 @@
+@use 'sass:map';
+@use '../1utilidades/maps';
+
+
+/*Generales*/
+
+/*Fuente Mulish*/
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+/*Fuente Open Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 64px;
+    font-family: "Mulish", sans-serif;
+    font-weight: 900;
+}
+
+h2{
+    font-size: 40px;
+    font-family: "Mulish", sans-serif;
+    font-weight: 900;
+}
+
+h3{
+    font-size: 20px;
+    font-family: "Mulish", sans-serif;
+    font-weight: 900;
+}
+
+h4{
+    color: map-get(maps.$colores,color-primario);
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.7cap;
+    margin-bottom: 20px;
+}
+
+p{
+    font-family: "Open Sans", sans-serif;
+    color: #051922;
+    font-size: 15px;
+}
+
+a{
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+}
+
+.naranja {
+    color: map-get(maps.$colores,color-primario);
+}
+
+.active{
+    color: map-get(maps.$colores,color-primario);
+}
+
+.boton-dark{
+    background-color: map-get(maps.$colores,color-primario);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.boton-dark:hover{
+    background-color:black;
+    color: map-get(maps.$colores,color-primario);
+    transform: scale(1.1);
+}
+
+.boton-light{
+    color: white;
+    border-style: solid;
+    border-color: map-get(maps.$colores,color-primario);
+    padding: 7px 20px;
+    margin-left: 20px;
+    border-radius: 50px;
+}
+
+.boton-light:hover{
+    color: white;
+    border-style: solid;
+    background-color: map-get(maps.$colores,color-primario);
+    padding: 7px 20px;
+    margin-left: 20px;
+    border-radius: 50px;
+    transform: scale(1.1);
+}
+
+.fondogris{
+    background-color: map-get(maps.$colores,fondo-gris);
+}

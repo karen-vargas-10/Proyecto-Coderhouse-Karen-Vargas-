@@ -1,0 +1,107 @@
+@use 'sass:map';
+@use '../1utilidades/maps';
+
+@use '../4secciones/home';
+
+/*SHOP----------------------------------------------------------*/
+.menu-productos{
+    margin: 150px 0px;
+    .container{
+        .row{
+            .menu-productos-categorias{
+                justify-items: center;
+                margin-bottom: 60px;
+                ul{
+                    display: flex;
+                    list-style: none;
+                    text-align: center;
+                    column-gap: 30px;
+                    li{
+                        font-weight: 700;
+                        color: #323232;
+                        padding: 8px 20px;
+                        border: 2px solid #051922;
+                        border-radius: 25px;
+                        a{
+                            font-size: 18px;
+                            color: #323232;
+                        }
+                    }
+                }
+            }
+        }
+        .cards-productos{
+            display: flex;
+            column-gap: 30px;
+            row-gap: 30px;
+            justify-content: center;
+            .cards-productos-items{
+                padding: 30px;
+                box-shadow: 0 0 20px #e4e4e4;
+                width: fit-content;
+                img{
+                    max-width: 261px;
+                }
+                h4{
+                    margin-bottom: 10px;
+                    font-size: 20px;
+                    font-weight:bolder;
+                    text-transform: none;
+                    letter-spacing: normal;
+                    color: #212529;
+                }
+                p{
+                    margin-bottom: 10px;
+                }
+                h2{
+                    font-size: 30px;
+                    margin-bottom: 15px;
+                }
+                a{
+                    font-size: 14px;
+                    border-radius: 50px;
+                }
+                .boton-dark{
+                    display: inline-block;
+                    margin-bottom: 30px;
+                }
+                .boton-dark:hover{
+                    transform: none;
+                }
+            }
+            .cards-productos-items:hover{
+                box-shadow: 0 0 20px #cccccc;
+                transform: scale(1.05);
+            }
+        }
+        .productos-paginas{
+            margin: 60px 0px 0px 0px;
+            ul{
+                display: flex;
+                list-style: none;
+                justify-content: center;
+                column-gap: 30px;
+                margin: 0px;
+                padding: 0px;
+                li{
+                    font-weight: 700;
+                    background-color: #f3f3f3;
+                    color: #323232;
+                    padding: 8px 20px;
+                    border-radius: 25px;
+                    a{
+                        font-size: 18px;
+                        color:#6f6f6f;
+                    }
+                }
+                li:hover{
+                    background-color: map-get(maps.$colores,color-primario);
+                }
+            }
+        }
+    }
+    div{
+        padding-bottom: 20px;
+    }
+}
+/*FIN Shop*/

@@ -1,0 +1,44 @@
+@use 'sass:map';
+@use '../1utilidades/maps';
+
+/*HOME barra de navegacion-------------------------*/
+header{
+    background-color:map-get(maps.$colores,fondo-navbar);
+    display: flex;
+    justify-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    .seccion-navbar{
+        padding: 25px 0px;
+        /*position: absolute;*/
+        align-content: center;
+        background-color: map-get(maps.$colores,fondo-navbar);
+        div{
+            ul{
+                display: flex;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                align-items: center;
+                li{
+                    padding: 15px;
+                    a{
+                        text-decoration: none;
+                        font-family: "Open Sans", sans-serif;
+                        font-size: 14px;
+                        font-weight: 700;
+                        color: white;
+                    }
+                    .activo{
+                        color:map-get(maps.$colores,color-primario);
+                    }
+                    a:hover{
+                        color:map-get(maps.$colores,color-primario);
+                        transform: scale(1.15);
+                    }
+                }
+            }
+        }
+    }
+}

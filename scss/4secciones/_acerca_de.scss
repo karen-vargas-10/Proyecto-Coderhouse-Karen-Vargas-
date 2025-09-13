@@ -1,0 +1,183 @@
+@use 'sass:map';
+@use '../1utilidades/maps';
+
+/*ACERCA DE porque Fruitkha?---------------------------------------------*/
+.seccion-Fruitkha{
+    margin: 150px 0px;
+    .seccion-Fruitkha-info{
+        div{
+            h2{
+                padding-bottom: 14px;
+                margin-bottom: 18px;
+            }
+        }
+        div{
+            .seccion-Fruitkha-tarjetas {
+                display: flex;
+                margin-bottom: 42px;
+                .seccion-Fruitkha-tarjetas-icono{
+                    display: block;
+                    padding: 17px 17px;
+                    margin: 0px 15px 0px 0px;
+                    color: map-get(maps.$colores,color-primario);
+                    border-style: dotted;
+                    border-radius: 50%;
+                    font-size: 24px;
+                    line-height: 20px;
+                    text-align: center;
+                    width: 65px;
+                    height: 65px;
+                    i{
+                        vertical-align: middle;
+                    } 
+                }
+                .seccion-Fruitkha-tarjetas-texto{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+/*FIN ACERCA DE porque Fruitkha?--------------*/
+
+
+/*ACERCA DE banner descuentos-------------------------------------*/
+.fondo-banner-descuentos{
+    background-image: url(..//img/fondo_fresas.jpg);
+    background-size: cover;
+    .fondo-banner-descuentos-contenedor {
+        padding: 110px 0px;
+        row-gap: 20px;
+        h2{
+            padding-bottom: 20px;
+        }
+        .fondo-banner-descuentos-texto{
+            display: flex;
+            align-items: end;
+            padding-bottom: 25px;
+            h2{
+                padding-bottom: 0px;
+            }
+            h3{
+                font-weight: 500;
+                padding-right: 10px;
+                text-align: center;
+            }
+        }
+    }
+}
+/*FIN ACERCA DE banner descuentos--------------*/
+
+
+/*ACERCA DE nuestro equipo -------------------------------------*/
+.seccion-nuestro-equipo{
+    margin: 150px 0px;
+    .seccion-nuestro-equipo-titulo{
+        margin-bottom: 80px;
+        div{
+            h2{
+                margin-bottom: 18px;
+                padding-bottom: 15px;
+            }
+        }
+    }
+    .tarjetas-trabajadores{
+        .tarjetas-trabajadores-contenido{
+            position: relative;
+            z-index: 1;
+            .trabajadores-foto1{
+                background-image: url(..//img/Jimmy-1.jpg);
+                background-position: center;
+                background-size: cover;
+                height: 400px;
+                padding-bottom: 15px;
+            }
+            .trabajadores-foto2{
+                background-image: url(..//img/Casate.jpg);
+                background-position: center;
+                background-size: cover;
+                height: 400px;
+                padding-bottom: 15px;
+            }
+            .trabajadores-foto3{
+                background-image: url(..//img/Simon.jpg);
+                background-position: center;
+                background-size: cover;
+                height: 400px;
+                padding-bottom: 15px;
+            }
+            .trabajadores-redes{
+                position: absolute;
+                width: 92.5%;
+                top: 330px;
+                justify-items: center;
+                z-index: 1;
+                ul{
+                    display: flex;
+                    list-style: none;
+                    justify-items: center;
+                    column-gap: 15px;
+                    padding: 20px 0px 0px 0px;
+                    top: 330px;
+                    left: 95px;
+                    li{
+                        a{
+                            color: white;
+                            background-color: map-get(maps.$colores,color-primario);
+                            width: 32px;
+                            height: 32px;
+                            border-radius: 50%;
+                            line-height: 30px;
+                            padding: 5px;
+                        }
+                        a:hover{
+                            color: map-get(maps.$colores,color-primario);
+                            background-color: black;
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+            h3{
+                margin-top: 15px;
+            }
+            h5{
+                font-size: 14px;
+            }
+        }
+    }
+}
+/*FIN ACERCA DE nuestro equipo*/
+
+
+/*ACERCA DE testimonios -------------------------------------*/
+.testimonios{
+    margin: 80px 0px 150px 0px;
+    .testimonios-imagen{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            justify-items: center;
+        }
+    }
+    .testimonios-texto{
+        text-align: center;
+        h5{
+            font-size: 14px;
+            font-weight: 700;
+            color: #999999;
+            margin: 10px 0px 18px 0px;
+        }
+        p{
+            font-size: 17px;
+            font-style: italic;
+            color: #999999;
+            margin-top: 20px;
+        }
+    }
+}
+/*FIN ACERCA DE testimonios*/

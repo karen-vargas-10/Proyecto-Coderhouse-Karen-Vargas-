@@ -1,0 +1,15 @@
+@use '1utilidades/maps';
+
+@use '2base/generales';
+
+@use '3componentes/header';
+@use '3componentes/banner';
+@use '3componentes/footer';
+
+@use '4secciones/home';
+@use '4secciones/acerca_de';
+@use '4secciones/noticias';
+@use '4secciones/contacto';
+@use '4secciones/shop';
+
+@use '5queries/queries';

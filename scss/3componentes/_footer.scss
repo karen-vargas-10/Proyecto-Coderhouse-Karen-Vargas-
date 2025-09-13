@@ -1,0 +1,122 @@
+@use 'sass:map';
+@use '../1utilidades/maps';
+
+/*Seccion Footer-------------------------------------------*/
+
+.contenedor-seccion-footer{
+    background-color:map-get(maps.$colores,fondo-footer);
+    width: 100%;
+    justify-items: center;
+    .seccion-footer{
+        display: block;
+        /*column-gap: 40px;*/
+        .seccion-info{
+            display: flex;
+            padding: 150px 0px;
+            div{
+                padding: 0px 0px;
+                h3{
+                    color: white;
+                    font-size: 24px;
+                    font-weight: 500;
+                    padding-bottom: 20px;
+                    margin-bottom: 18px;
+                }
+                p {
+                    color: rgb(181, 181, 181);
+                    margin-bottom: 18px;
+                }
+                .lista-paginas{
+                    ul{
+                        li{
+                            margin-bottom: 10px;
+                            i{
+                                color: white;
+                            }
+                            a{
+                                font-size: 15px;
+                            }
+                            a:hover{
+                                color: map-get(maps.$colores,color-primario);
+                            }
+                        }
+                    }
+                }
+                ul{
+                    padding-left: 0px;
+                }
+                li{
+                    list-style: none;
+                    i{
+                        color: rgb(99, 99, 99);
+                    }
+                    a{
+                        color: map-get(maps.$colores,texto-footer);
+                        font-size: 15px;
+                    }
+                    a:hover{
+                        color: #F28123;
+                    }
+                }
+                input{
+                    color: map-get(maps.$colores,texto-footer);
+                    background-color: rgb(1, 39, 56);
+                    padding: 20px;
+                    margin-right: 3px;
+                    width: 78%;
+                    border-radius: 5px;
+                    font-size: 15px;
+                    border: none;
+                }
+                button{
+                    background-color: rgb(1, 39, 56);
+                    padding: 20px;
+                    width: 20%;
+                    border-radius: 5px;
+                    font-size: 15px;
+                    border: none;
+                    i{
+                        color: map-get(maps.$colores,color-primario);
+                    }
+                }
+            }
+        }
+        .seccion-legal{
+            display: flex;
+            justify-items: center;
+            div{
+                display: flex;
+                p{
+                    margin: 0px 0px 18px 0px;
+                    padding: 16px 0px;
+                    color: map-get(maps.$colores,texto-footer);
+                }
+            }
+            .footer-iconos{
+                justify-content: end;
+                padding: 0px 15px;
+                .lista-footer-iconos{
+                    display: flex;
+                    li{
+                        list-style: none;
+                        padding: 16px 10px;
+                        color: map-get(maps.$colores,texto-footer);
+                        a{
+                            color: rgb(181, 181, 181);
+                            i:hover{
+                                color: map-get(maps.$colores,color-primario);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+footer strong {
+    color: #F28123;
+}
+
+/*FIN Footer-----------------------------------------*/

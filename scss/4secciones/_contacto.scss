@@ -1,0 +1,70 @@
+@use 'sass:map';
+@use '../1utilidades/maps';
+
+/*CONTACTANOS-------------------------------------------------------*/
+.contenedor-seccion-contactanos{
+    margin: 150px 0px;
+    .contactanos-formulario{
+        .contactanos-formulario-contenedor{
+            h3{
+                font-size: 25px;
+                margin-bottom: 18px;
+            }
+            p{
+                margin-bottom: 25px;
+            }
+            form{
+                div{
+                    margin-bottom: 18px;
+                    input{
+                        width: 49.5%;
+                        padding: 15px;
+                        border: 1px solid #ddd;
+                        border-radius: 3px;
+                    }
+                }
+                div{
+                    margin-bottom: 18px;
+                    textarea{
+                        width: 99.5%;
+                        height: 200px;
+                        padding: 15px;
+                        border: 1px solid #ddd;
+                        border-radius: 3px;
+                    }
+                }
+                div{
+                    margin-bottom: 18px;
+                    button{
+                        border: none;
+                        padding: 15px 25px;
+                        text-transform: uppercase;
+                        color: #051922;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+        .contactanos-info{
+            justify-items: center;
+            padding: 45px 30px;
+            background-color: map-get(maps.$colores,fondo-gris);
+            .contactanos-info-contenedor{
+                display: flex;
+                margin-bottom: 30px;
+                .contacto-info-icono{
+                    color: map-get(maps.$colores,color-primario);
+                    margin-right: 15px;
+                    font-size: 20px;
+                }
+                .contacto-info-texto{
+                    display: block;
+                    h3{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+/*FIN Contactanos*/

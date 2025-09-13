@@ -1,0 +1,188 @@
+@use '../3componentes/footer';
+
+@media (max-width:480px){
+    p{
+        font-size: 14px;
+    }
+    h5{
+        font-size: 18px;
+    }
+    /*Barra de navegacion*/
+    header .seccion-navbar {
+        display: flex;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    header .seccion-navbar .menu-hamburguesa {
+        display: block;
+    }
+    header .seccion-navbar .menu-navegacion {
+        display: none;
+    }
+    .menu-iconos{
+        display: none;
+    }
+    /*Home banner*/
+    .botones-encabezado{
+        justify-items: center;
+        margin-top: 35px;
+    }
+    .botones-encabezado .boton-dark{
+        width: 95%;
+    }
+    .botones-encabezado .boton-light{
+        width: 95%;
+        margin: 15px 0px 0px 0px;
+    }
+    .seccion-encabezado-contenido h4{
+        font-size: 13px;
+    }
+    .seccion-encabezado-contenido h1{
+        font-size: 28px;
+    }
+    .seccion-encabezado-contenido a{
+        display: block;
+        font-size: 14px;
+        text-align: center;
+    }
+    /*HOME seccion info envios*/
+    .contenedor-seccion-info-envios .seccion-info-envios {
+        padding: 80px 20px;
+    }
+    /*Home seccion nuestros productos*/
+    .contenedor-seccion-nuestros-productos .seccion-nuestros-productos .cards-productos {
+        row-gap: 30px;
+    /*padding-top: 50px;*/
+    }
+    .contenedor-seccion-nuestros-productos .seccion-nuestros-productos .nuestros-productos-encabezado {
+        padding-bottom: 70px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    /*HOME seccion oferta del mes------------------------------*/
+    .contenedor-seccion-oferta-del-mes .seccion-oferta-del-mes {
+        margin-top: 40px;
+        max-width: 100%;
+    }
+    .contenedor-seccion-oferta-del-mes .seccion-oferta-del-mes .seccion-oferta-del-mes-descripcion {
+        max-width: 100%;
+    }
+    .cuenta-regresiva{
+        flex-wrap: wrap;
+        row-gap: 5px;
+    }
+    /*Seccion Footer-------------------------------------------*/
+    .contenedor-seccion-footer .seccion-footer .seccion-info {
+        padding: 80px 20px;
+        row-gap: 20px;
+    }
+    .seccion-legal{
+        padding: 20px 20px;
+        row-gap: 20px;
+        text-align: center;
+        justify-content: center;
+    }
+    .contenedor-seccion-footer .seccion-footer .seccion-legal .footer-iconos{
+        justify-content: center;
+    }
+
+    .footer-iconos ul{
+        padding-left:0px ;
+    }
+    /*PAG Acerca de-------------------------------------------*/
+    .fondo-banner-descuentos-contenedor{
+    padding-left: 20px;
+    padding-right: 20px;
+    }
+    .seccion-nuestro-equipo{
+    padding-left: 8px;
+    padding-right: 8px;
+    }
+    .testimonios{
+    padding-left: 20px;
+    padding-right: 20px;
+    }
+    .tarjetas-trabajadores{
+    row-gap: 20px;
+    }
+    /*PAG Shop-----------------------------------------------*/
+    .productos-paginas ul{
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+    }
+    .menu-productos-categorias ul{
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: center;
+    }
+    /*PAG Noticias-----------------------------------------------*/
+    .noticias-tarjetas-contenedor{
+    justify-content: center;
+    }
+    /*PAG Contactanos--------------------------------------------*/
+    .contactanos-info{
+    justify-items:start;
+    padding: 45px 20px;
+    background-color: #F5F5F5;
+    }
+    .contactanos-formulario-contenedor{
+    padding: 0px 20px;
+    margin-bottom: 40px;
+    }
+    .contenedor-seccion-contactanos{
+    margin: 80px 0px;
+    }
+}
+
+@media (max-width:992px){
+    /*Barra de navegacion*/
+    .seccion-navbar{
+        display: flex;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .menu-hamburguesa{
+        display: block;
+    }
+    .menu-navegacion{
+        display: none;
+    }
+    .menu-iconos{
+        display: none;
+    }
+    /*Home seccion info envios*/
+    .contenedor-seccion-info-envios{
+    height: auto;
+    }
+    .seccion-info-envios{
+    padding-right: 20px;
+    padding-left: 20px;
+    }
+    .contenedor-tarjetas-info-envios{
+    column-gap: 20px;
+    }
+    .tarjetas-info-envios{
+    padding: 0px;
+    }
+    /*Home seccion oferta del mes*/
+    .cuenta-regresiva{
+    flex-wrap: wrap;
+    row-gap: 5px;
+    }
+    /*Seccion Footer-------------------------------------------*/
+    .seccion-info{
+        padding: 80px 20px;
+        row-gap: 20px;
+    }
+    .seccion-legal{
+        padding: 0px 20px;
+    }
+    .noticias-tarjetas-contenedor{
+        justify-content: center;
+    }
+}

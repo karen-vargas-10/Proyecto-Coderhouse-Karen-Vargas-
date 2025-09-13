@@ -1,0 +1,49 @@
+@use 'sass:map';
+@use '../1utilidades/maps';
+
+@use '../2base/generales';
+
+/*HOME encabezado o baner----------------------------------*/
+.contenedor-seccion-encabezado{
+    background-color: map-get(maps.$colores,fondo-encabezado);
+    min-height: 100vh;
+    align-content: center;
+    .seccion-encabezado{
+        display: block;
+        text-align: center;
+        .seccion-encabezado-contenido{
+            h1{
+                color: white;
+                margin-bottom: 20px;
+            }
+            .botones-encabezado{
+                justify-items: center;
+                margin-top: 35px;
+                a{
+                    border-radius: 50px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+/* FIN HOME encabezado o baner*/
+
+/*encabezado o baner de las secciones a excepcion del home*/
+.contenedor-seccion-titulo{
+    background-color: map-get(maps.$colores,fondo-encabezado);
+    width: 100%;
+    min-height: 60vh;
+    align-content: center;
+    .seccion-titulo{
+        display: block;
+        justify-items: center;
+        h1{
+            font-family: "Mulish", sans-serif;
+            font-weight: 900;
+            font-size: 50px;
+            color: white;
+        }
+    }
+}
+/*FIN encabezado o baner de las secciones a excepcion del home*/

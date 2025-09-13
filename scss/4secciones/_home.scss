@@ -1,0 +1,172 @@
+@use 'sass:map';
+@use '../1utilidades/maps';
+
+
+/*HOME seccion info envios---------------------------------*/
+.contenedor-seccion-info-envios{
+    height: 225px;
+    background-color: map-get(maps.$colores, fondo-gris);
+    align-content: center;
+    justify-items: center;
+    .seccion-info-envios{
+        display: flex;
+        padding: 80px 0px;
+        justify-content: flex-start;
+        justify-content: center;
+        box-sizing: border-box;
+        .contenedor-tarjetas-info-envios{
+            row-gap: 20px;
+            .tarjetas-info-envios{
+                display: flex;
+                height: 65px;
+                width: 384px;
+                letter-spacing: 0.5px;
+                margin: 0px;
+                padding: 0px 15px;
+                align-items: center; /*centra el texto verticalmente*/
+                .iconos-envios{
+                    display: flex;
+                    align-items: center;
+                    padding: 17px 17px;
+                    margin: 0px 15px 0px 0px;
+                    color: map-get(maps.$colores,color-primario);
+                    border-style: dotted;
+                    border-radius: 50%;
+                    font-size: 22px;
+                }
+                .iconos-envios-texto{
+                    display: block;
+                    h3{
+                        font-size: 18px;
+                        margin-bottom:4px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                } 
+            }
+        }
+    }
+}
+/*FIN HOME seccion info envios*/
+
+/*HOME seccion nuestros productos--------------------------*/
+.contenedor-seccion-nuestros-productos{
+    width: 100%;
+    justify-items: center;
+    .seccion-nuestros-productos{
+    margin: 150px 0px;
+        .nuestros-productos-encabezado{
+            height: 198px;
+            h2{
+                text-align: center;
+                padding: 0px 0px 15px 0px;
+                margin: 0px 0px 17.5px 0px;
+            }
+            p{
+                text-align: center;
+            }
+        }
+        .cards-productos{
+            display: flex;
+            column-gap: 30px;
+            row-gap: 30px;
+            justify-content: center;
+            .cards-productos-items{
+                padding: 30px;
+                box-shadow: 0 0 20px #e4e4e4;
+                width: fit-content;
+                img{
+                    max-width: 261px;
+                }
+                h4{
+                    margin-bottom: 10px;
+                    font-size: 20px;
+                    font-weight:bolder;
+                    text-transform: none;
+                    letter-spacing: normal;
+                    color: #212529;
+                }
+                p{
+                    margin-bottom: 10px;
+                }
+                h2{
+                    font-size: 30px;
+                    margin-bottom: 15px;
+                }
+                a{
+                    font-size: 14px;
+                    border-radius: 50px;
+                }
+                .boton-dark{
+                    display: inline-block;
+                    margin-bottom: 30px;
+                }
+                .boton-dark:hover{
+                    transform: none;
+                }
+            }
+            .cards-productos-items:hover{
+                box-shadow: 0 0 20px #cccccc;
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+/*FIN HOME seccion nuestros productos*/
+
+/*HOME seccion oferta del mes------------------------------*/
+.contenedor-seccion-oferta-del-mes{
+    width: 100%;
+    align-content: center;
+    background-color: map-get(maps.$colores,fondo-gris);
+    .seccion-oferta-del-mes{
+        justify-content: center;
+        padding: 100px 0px;
+        .seccion-oferta-del-mes-imagen{
+            background-image:url(../img/Oferta.jpg);
+            background-size: cover;
+            background-position: top;
+            margin-top: 40px;
+            max-width: 50%;
+        }
+        .seccion-oferta-del-mes-descripcion{
+            padding: 40px 20px 0px 20px;
+            max-width: 50%;
+            h2{
+                margin-bottom: 18px;
+            }
+            h5{
+                text-transform: uppercase;
+                font-family: "Mulish", sans-serif;
+                font-size: 21px;
+                font-weight: 500;
+                margin-bottom: 18px;
+            }
+            p{
+                margin: 25px 0px;
+            }
+            .cuenta-regresiva{
+                display: flex;
+                column-gap: 5px;
+                div{
+                    border-style: solid;
+                    border-color: map-get(maps.$colores, color-primario);
+                    padding: 8px 20px;
+                    text-align: center;
+                    h2{
+                        margin: 0px;
+                    }
+                    p{
+                        margin: 0px;
+                    }
+                }
+            }
+            a.boton-dark{
+                display: inline-block;
+                margin-top: 30px;
+            }
+        }
+    }
+}
+/*FIN HOME seccion oferta del mes*/
