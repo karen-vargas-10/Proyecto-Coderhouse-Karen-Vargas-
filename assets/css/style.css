@@ -3,6 +3,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
 /*Fuente Open Sans*/
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
+.flex-center, .noticias .productos-paginas ul, .menu-productos .container .cards-productos, .menu-productos .container .productos-paginas ul, .testimonios .testimonios-imagen, .contenedor-seccion-nuestros-productos .seccion-nuestros-productos .cards-productos {
+  display: flex;
+  justify-content: center;
+}
+
+.foto-trabajadores, .seccion-nuestro-equipo .tarjetas-trabajadores .tarjetas-trabajadores-contenido .trabajadores-foto1, .seccion-nuestro-equipo .tarjetas-trabajadores .tarjetas-trabajadores-contenido .trabajadores-foto2, .seccion-nuestro-equipo .tarjetas-trabajadores .tarjetas-trabajadores-contenido .trabajadores-foto3 {
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  padding-bottom: 15px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -10,20 +22,20 @@
 }
 
 h1 {
-  font-size: 64px;
   font-family: "Mulish", sans-serif;
+  font-size: 64px;
   font-weight: 900;
 }
 
 h2 {
-  font-size: 40px;
   font-family: "Mulish", sans-serif;
+  font-size: 40px;
   font-weight: 900;
 }
 
 h3 {
-  font-size: 20px;
   font-family: "Mulish", sans-serif;
+  font-size: 20px;
   font-weight: 900;
 }
 
@@ -136,6 +148,9 @@ header .seccion-navbar div ul li a:hover {
   background-color: #3a5663;
   min-height: 100vh;
   align-content: center;
+  animation-name: animacion;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
 }
 .contenedor-seccion-encabezado .seccion-encabezado {
   display: block;
@@ -154,10 +169,30 @@ header .seccion-navbar div ul li a:hover {
   text-align: center;
 }
 
+@keyframes animacion {
+  0% {
+    background-color: #3a5663;
+  }
+  25% {
+    background-color: #1b333e;
+  }
+  50% {
+    background-color: #0d222d;
+  }
+  75% {
+    background-color: #1b333e;
+  }
+  100% {
+    background-color: #3a5663;
+  }
+}
 /* FIN HOME encabezado o baner*/
 /*encabezado o baner de las secciones a excepcion del home*/
 .contenedor-seccion-titulo {
   background-color: #3a5663;
+  animation-name: animacion;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
   width: 100%;
   min-height: 60vh;
   align-content: center;
@@ -355,11 +390,9 @@ footer strong {
   text-align: center;
 }
 .contenedor-seccion-nuestros-productos .seccion-nuestros-productos .cards-productos {
-  display: flex;
   -moz-column-gap: 30px;
        column-gap: 30px;
   row-gap: 30px;
-  justify-content: center;
 }
 .contenedor-seccion-nuestros-productos .seccion-nuestros-productos .cards-productos .cards-productos-items {
   padding: 30px;
@@ -413,7 +446,7 @@ footer strong {
   padding: 100px 0px;
 }
 .contenedor-seccion-oferta-del-mes .seccion-oferta-del-mes .seccion-oferta-del-mes-imagen {
-  background-image: url(../img/Oferta.jpg);
+  background-image: url(../img/Oferta.webp);
   background-size: cover;
   background-position: top;
   margin-top: 40px;
@@ -494,7 +527,7 @@ footer strong {
 /*FIN ACERCA DE porque Fruitkha?--------------*/
 /*ACERCA DE banner descuentos-------------------------------------*/
 .fondo-banner-descuentos {
-  background-image: url(..//img/fondo_fresas.jpg);
+  background-image: url(..//img/fondo_fresas.webp);
   background-size: cover;
 }
 .fondo-banner-descuentos .fondo-banner-descuentos-contenedor {
@@ -535,25 +568,13 @@ footer strong {
   z-index: 1;
 }
 .seccion-nuestro-equipo .tarjetas-trabajadores .tarjetas-trabajadores-contenido .trabajadores-foto1 {
-  background-image: url(..//img/Jimmy-1.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 400px;
-  padding-bottom: 15px;
+  background-image: url(..//img/Jimmy-1.webp);
 }
 .seccion-nuestro-equipo .tarjetas-trabajadores .tarjetas-trabajadores-contenido .trabajadores-foto2 {
-  background-image: url(..//img/Casate.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 400px;
-  padding-bottom: 15px;
+  background-image: url(..//img/Casate.webp);
 }
 .seccion-nuestro-equipo .tarjetas-trabajadores .tarjetas-trabajadores-contenido .trabajadores-foto3 {
-  background-image: url(..//img/Simon.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 400px;
-  padding-bottom: 15px;
+  background-image: url(..//img/Simon.webp);
 }
 .seccion-nuestro-equipo .tarjetas-trabajadores .tarjetas-trabajadores-contenido .trabajadores-redes {
   position: absolute;
@@ -599,8 +620,6 @@ footer strong {
   margin: 80px 0px 150px 0px;
 }
 .testimonios .testimonios-imagen {
-  display: flex;
-  justify-content: center;
   margin-bottom: 20px;
 }
 .testimonios .testimonios-imagen img {
@@ -653,11 +672,9 @@ footer strong {
   color: #323232;
 }
 .menu-productos .container .cards-productos {
-  display: flex;
   -moz-column-gap: 30px;
        column-gap: 30px;
   row-gap: 30px;
-  justify-content: center;
 }
 .menu-productos .container .cards-productos .cards-productos-items {
   padding: 30px;
@@ -702,9 +719,7 @@ footer strong {
   margin: 60px 0px 0px 0px;
 }
 .menu-productos .container .productos-paginas ul {
-  display: flex;
   list-style: none;
-  justify-content: center;
   -moz-column-gap: 30px;
        column-gap: 30px;
   margin: 0px;
@@ -748,22 +763,22 @@ footer strong {
   background-position: center;
 }
 .noticias .noticias-tarjetas-contenedor .noticias-tarjetas .foto-1 {
-  background-image: url(..//img/noticias1.jpg);
+  background-image: url(..//img/noticias1.webp);
 }
 .noticias .noticias-tarjetas-contenedor .noticias-tarjetas .foto-2 {
-  background-image: url(..//img/noticias_2.jpg);
+  background-image: url(..//img/noticias_2.webp);
 }
 .noticias .noticias-tarjetas-contenedor .noticias-tarjetas .foto-3 {
-  background-image: url(..//img/noticias_3.jpg);
+  background-image: url(..//img/noticias_3.webp);
 }
 .noticias .noticias-tarjetas-contenedor .noticias-tarjetas .foto-4 {
-  background-image: url(..//img/noticias_4.jpg);
+  background-image: url(..//img/noticias_4.webp);
 }
 .noticias .noticias-tarjetas-contenedor .noticias-tarjetas .foto-5 {
-  background-image: url(..//img/noticias_5.jpg);
+  background-image: url(..//img/noticias_5.webp);
 }
 .noticias .noticias-tarjetas-contenedor .noticias-tarjetas .foto-6 {
-  background-image: url(..//img/noticias_6.jpg);
+  background-image: url(..//img/noticias_6.webp);
 }
 .noticias .noticias-tarjetas-contenedor .noticias-tarjetas .noticias-texto {
   padding: 25px;
@@ -797,9 +812,7 @@ footer strong {
   margin: 60px 0px 0px 0px;
 }
 .noticias .productos-paginas ul {
-  display: flex;
   list-style: none;
-  justify-content: center;
   -moz-column-gap: 30px;
        column-gap: 30px;
   margin: 0px;
@@ -865,6 +878,9 @@ footer strong {
   justify-items: center;
   padding: 45px 30px;
   background-color: #F5F5F5;
+  animation-name: bordes;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
 }
 .contenedor-seccion-contactanos .contactanos-formulario .contactanos-info .contactanos-info-contenedor {
   display: flex;
@@ -882,6 +898,23 @@ footer strong {
   font-size: 20px;
 }
 
+@keyframes bordes {
+  0% {
+    border: 5px, solid, #c8c4c4;
+  }
+  25% {
+    border: 5px, solid, #9c9999;
+  }
+  50% {
+    border: 5px, solid, #5f5e5e;
+  }
+  75% {
+    border: 5px, solid, #9c9999;
+  }
+  100% {
+    border: 5px, solid, #c8c4c4;
+  }
+}
 /*FIN Contactanos*/
 @media (max-width: 480px) {
   p {

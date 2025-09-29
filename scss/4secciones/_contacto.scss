@@ -49,6 +49,9 @@
             justify-items: center;
             padding: 45px 30px;
             background-color: map-get(maps.$colores,fondo-gris);
+            animation-name: bordes;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
             .contactanos-info-contenedor{
                 display: flex;
                 margin-bottom: 30px;
@@ -65,6 +68,24 @@
                 }
             }
         }
+    }
+}
+
+@keyframes bordes{
+    0%{
+        border: 5px, solid, #c8c4c4;
+    }
+    25%{
+        border: 5px, solid, #9c9999;
+    }
+    50%{
+        border: 5px, solid, #5f5e5e;
+    }
+    75%{
+        border: 5px, solid, #9c9999;
+    }
+    100%{
+        border: 5px, solid, #c8c4c4;
     }
 }
 /*FIN Contactanos*/

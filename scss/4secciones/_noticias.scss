@@ -1,5 +1,6 @@
 @use 'sass:map';
 @use '../1utilidades/maps';
+@use '../1utilidades/extend';
 
 @use '../4secciones/shop';
 
@@ -19,22 +20,22 @@
                 background-position: center;
             }
             .foto-1{
-                background-image: url(..//img/noticias1.jpg);
+                background-image: url(..//img/noticias1.webp);
             }
             .foto-2{
-                background-image: url(..//img/noticias_2.jpg);
+                background-image: url(..//img/noticias_2.webp);
             }
             .foto-3{
-                background-image: url(..//img/noticias_3.jpg);
+                background-image: url(..//img/noticias_3.webp);
             }
             .foto-4{
-                background-image: url(..//img/noticias_4.jpg);
+                background-image: url(..//img/noticias_4.webp);
             }
             .foto-5{
-                background-image: url(..//img/noticias_5.jpg);
+                background-image: url(..//img/noticias_5.webp);
             }
             .foto-6{
-                background-image: url(..//img/noticias_6.jpg);
+                background-image: url(..//img/noticias_6.webp);
             }
             .noticias-texto{
                 padding: 25px;
@@ -69,9 +70,8 @@
     .productos-paginas{
         margin: 60px 0px 0px 0px;
         ul{
-            display: flex;
+            @extend .flex-center;
             list-style: none;
-            justify-content: center;
             column-gap: 30px;
             margin: 0px;
             padding: 0px;

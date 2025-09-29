@@ -1,0 +1,5 @@
+@mixin texto($fuente, $variante, $tamano, $espesor) {
+    font-family: $fuente, $variante;
+    font-size: $tamano;
+    font-weight: $espesor;
+}

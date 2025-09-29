@@ -1,5 +1,7 @@
 @use 'sass:map';
 @use '../1utilidades/maps';
+@use '../1utilidades/extend';
+
 
 /*ACERCA DE porque Fruitkha?---------------------------------------------*/
 .seccion-Fruitkha{
@@ -43,7 +45,7 @@
 
 /*ACERCA DE banner descuentos-------------------------------------*/
 .fondo-banner-descuentos{
-    background-image: url(..//img/fondo_fresas.jpg);
+    background-image: url(..//img/fondo_fresas.webp);
     background-size: cover;
     .fondo-banner-descuentos-contenedor {
         padding: 110px 0px;
@@ -86,25 +88,16 @@
             position: relative;
             z-index: 1;
             .trabajadores-foto1{
-                background-image: url(..//img/Jimmy-1.jpg);
-                background-position: center;
-                background-size: cover;
-                height: 400px;
-                padding-bottom: 15px;
+                background-image: url(..//img/Jimmy-1.webp);
+                @extend .foto-trabajadores;
             }
             .trabajadores-foto2{
-                background-image: url(..//img/Casate.jpg);
-                background-position: center;
-                background-size: cover;
-                height: 400px;
-                padding-bottom: 15px;
+                background-image: url(..//img/Casate.webp);
+                @extend .foto-trabajadores;
             }
             .trabajadores-foto3{
-                background-image: url(..//img/Simon.jpg);
-                background-position: center;
-                background-size: cover;
-                height: 400px;
-                padding-bottom: 15px;
+                background-image: url(..//img/Simon.webp);
+                @extend .foto-trabajadores;
             }
             .trabajadores-redes{
                 position: absolute;
@@ -154,8 +147,7 @@
 .testimonios{
     margin: 80px 0px 150px 0px;
     .testimonios-imagen{
-        display: flex;
-        justify-content: center;
+        @extend .flex-center;
         margin-bottom: 20px;
         img{
             width: 100px;
